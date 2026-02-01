@@ -1,16 +1,70 @@
-# React + Vite
+# Web Development Project 1 - *Community Board*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Submitted by: **Syeda Haque**
 
-Currently, two official plugins are available:
+**This web app is a responsive community board showcasing 12 popular food trucks with vibrant card layouts, hover animations, and a distinctive red-and-white striped awning design that works seamlessly across desktop and mobile devices.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Time spent: **3** hours spent in total
 
-## React Compiler
+## Required Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The following **required** functionality is completed:
 
-## Expanding the ESLint configuration
+- [x] **The app has a cohesive, unique theme for events or resources relevant to a specific community**
+  - [x] Header/title describing the theme is displayed
+- [x] **At least 10 unique events or resources are displayed in a responsive card format**
+  - [x] There are at least 10 cards displayed 
+  - [x] The cards should be displayed in an organized format (ex. a grid, or in one line)
+  - [x] Each card should include some information about the event or resource
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+The following **optional** features are implemented:
+
+- [x] Buttons or links to a related resources are on each card component
+  - [x] All cards have buttons or links in addition to text
+- [x] The site is responsive for both desktop and mobile formats
+  - [x] Web app is shown in a mobile format
+  - [x] **Video Walkthrough Special Instructions**: To ease the grading process, please use Chrome Developer Tools' "Toggle Device" button to demonstrate that your web application's responsiveness in both a desktop *and* a mobile format. Detailed instructions can be found below this stretch feature on the project page. 
+
+The following **additional** features are implemented:
+
+* [x] List anything else that you added to improve the site's functionality!
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented required features:
+
+<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<!-- Replace this with whatever GIF tool you used! -->
+GIF created with LICEcap 
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
+
+## Notes
+
+1) Awning Design - Creating the red and white striped awning with proper scalloped edges that matched the reference image exactly
+2) Image Loading Issues - Some Unsplash image URLs weren't loading (Lobsta Love and El Jefe's Tacos), requiring replacement with working URLs
+3) Awning Positioning - Balancing the awning's vertical position so the striped pattern was visible while keeping the scalloped edge clear and avoiding overlap with the title
+4) Scallop Shape - Getting the scallops to curve outward (convex) instead of inward (concave) to match the sample design
+5) CSS vs Image Approach - Initially tried creating the awning with pure CSS/SVG, then switched to using an actual PNG image file for simplicity
+6) Responsive Spacing - Ensuring proper spacing between the awning and title text across different screen sizes (mobile, tablet, desktop)
+7) Unused Import Warning - Removing the useState import that wasn't being used in the App component
+
+## License
+
+    Copyright [yyyy] [name of copyright owner]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
