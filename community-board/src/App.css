@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+.header {
+  background: linear-gradient(180deg, #89d4cf 0%, #a8edea 100%);
+  padding: 0px 20px 60px;  /* Changed from 40px to 0px top padding */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.awning {
+  position: absolute;
+  top: -1px;  /* Move it up so top goes off-screen */
+  left: 0;
+  right: 0;
+  height: 250px;
+  background-image: url('/awning.png');
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center bottom;  /* Changed to bottom */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-family: 'Patua One', cursive;
+  font-size: 56px;
+  color: white;
+  margin: 300px 0 16px 0;  /* Reduced from 220px */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+    margin-top: 180px;  /* Changed from 80px */
+  }
+  
+  .subtitle {
+    font-size: 16px;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .awning {
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 32px;
+  }
+  
+  .header {
+    padding: 30px 16px 40px;
+  }
+  
+  .container {
+    padding: 24px 16px;
+  }
+}
